@@ -25,7 +25,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '=z)ps7290a8qa_6obcsu#u2lr6rpa+a5_$bxa#9a@1p8j!k-h7'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'DYNO' in os.environ
+DEBUG = 'DYNO' not in os.environ
 
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 ALLOWED_HOSTS = ['*']
